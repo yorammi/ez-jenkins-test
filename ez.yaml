@@ -1,0 +1,12 @@
+stages:
+  - name: Build
+    steps:
+      - sh '1'
+  - name: Test
+    steps:
+      - sh '2'
+  - name: Deploy
+    steps:
+      - script {
+          sh '3'
+        }
