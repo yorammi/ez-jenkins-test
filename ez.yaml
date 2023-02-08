@@ -7,6 +7,4 @@ stages:
       - sh '2'
   - name: Deploy
     steps:
-      - script {
-          sh '3'
-        }
+      - sh '3'
