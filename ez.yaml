@@ -4,7 +4,7 @@ stages:
       - echo "1"
   - name: Test
     steps:
-      - echo "2"
+      - env
   - name: Deploy
     steps:
-      - echo "3"
+      - pwd
