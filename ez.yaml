@@ -1,10 +1,10 @@
 stages:
   - name: Build
     steps:
-      - sh '1'
+      - echo "1"
   - name: Test
     steps:
-      - sh '2'
+      - echo "2"
   - name: Deploy
     steps:
-      - sh '3'
+      - echo "3"
