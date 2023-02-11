@@ -6,4 +6,6 @@ stages:
       - sh "env"
   - name: test2
     steps:
-      - { "echo \"test\"", "sh \"ls -la\"", "sh \"env\"" }
+      - "{ echo "test"
+           sh "ls -la"
+           sh "env" }"
