@@ -10,6 +10,6 @@ stages:
       - script{ echo "test" }
       - ezLog.info "info"
       - script{ 
-          eval sum=1+1;
+          calc sum=1+1;
           echo $sum;
         }
