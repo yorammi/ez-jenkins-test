@@ -1,10 +1,11 @@
 stages:
-  - name: test
+  - name: test1
     steps:
       - echo "test"
       - sh "ls -la"
       - sh "env"
-#       - { type: echo, args: "test" }
-#       - { type: step, args: "echo \"test\"" }
-#       - { type: step, args: "sh \"ls -la\"" }
-#       - { type: sh, args: env }
+  - name: test2
+    steps:
+      - { echo "test"
+          sh "ls -la"
+          sh "env" }
