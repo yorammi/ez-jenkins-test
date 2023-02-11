@@ -3,4 +3,4 @@ stages:
     steps:
       - { type: sh, args: env }
       - { type: echo, args: "test" }
-      - { type: step, args: "script{sh env}" }
+      - { type: step, args: "echo test" }
