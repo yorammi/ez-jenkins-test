@@ -8,5 +8,5 @@ stages:
     steps:
       - dir("."){sh "ls -la"}
       - script{ echo "test" }
-      - script{ sh "ls -la" \
-                echo "test"}
+      - "script{ sh \"ls -la\"
+                echo \"test\"}"
