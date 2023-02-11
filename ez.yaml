@@ -11,5 +11,5 @@ stages:
       - ezLog.info "info"
       - script{ 
           def sum=1+1;
-          echo sum;
+          echo "${sum}";
         }
