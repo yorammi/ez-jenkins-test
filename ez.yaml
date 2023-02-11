@@ -2,9 +2,9 @@ phases:
   - name: phase1
     stages:
       - test1
+      - test2
   - name: phase2
     stages:
-      - test2
       - test3
 
 stages:
