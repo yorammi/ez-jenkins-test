@@ -1,7 +1,7 @@
 stages:
   - name: Build
     steps:
-      - sh env
+      - sh -C "env"
   - name: Test
     steps:
       - env
