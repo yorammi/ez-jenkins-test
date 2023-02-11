@@ -7,5 +7,4 @@ stages:
   - name: test2
     steps:
       - dir("."){sh "ls -la"}
-      - script{ echo "test",
-           sh "env" }
+      - script{ echo "test" }
