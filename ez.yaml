@@ -9,3 +9,7 @@ stages:
       - dir("."){sh "ls -la"}
       - script{ echo "test" }
       - ezLog.info "info"
+      - script{ 
+          echo "test1"
+          echo "test2"
+        }
