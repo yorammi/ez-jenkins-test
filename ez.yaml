@@ -7,9 +7,9 @@ stages:
   - name: test2
     steps:
       - dir("."){sh "ls -la"}
-      - script{ echo "test" }
+      - script { echo "test" }
       - ezLog.info "info"
-      - script{ 
-          def sum=1+1;
-          echo "${sum}";
-        }
+      - script { 
+                  def sum=1+1;
+                  echo "${sum}";
+               }
