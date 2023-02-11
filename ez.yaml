@@ -6,6 +6,7 @@ stages:
       - sh "env"
   - name: test2
     steps:
-      - "{ echo \"test\"
-           sh \"ls -la\"
-           sh \"env\" }"
+      - dir("."){sh "ls -la"}
+      - script{ echo "test"
+           sh "ls -la"
+           sh "env" }
