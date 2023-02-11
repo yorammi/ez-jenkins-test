@@ -10,6 +10,6 @@ stages:
       - script{ echo "test" }
       - ezLog.info "info"
       - script{ 
-          echo "test1"
-          echo "test2"
+          echo "test1";
+          echo "test2";
         }
