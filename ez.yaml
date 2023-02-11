@@ -1,13 +1,5 @@
 stages:
-  - name: Build
+  - name: test
     steps:
       - { type: sh, args: env }
-      - { type: sh, args: ls }
-  - name: Test
-    steps:
-      - { type: sh, args: env }
-      - { type: sh, args: ls }
-  - name: Deploy
-    steps:
-      - { type: sh, args: env }
-      - { type: sh, args: ls }
+      - { type: sh, args: "ls -la" }
