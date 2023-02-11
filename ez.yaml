@@ -2,4 +2,4 @@ stages:
   - name: test
     steps:
       - { type: sh, args: env }
-      - { type: step, args: "echo test" }
+      - { type: echo, args: "test" }
