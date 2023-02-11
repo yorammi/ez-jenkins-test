@@ -2,6 +2,8 @@ phases:
   - name: phase1
     stages:
       - test1
+  - name: phase2
+    stages:
       - test2
   - name: phase2
     stages:
