@@ -23,5 +23,5 @@ stages:
       - script { 
                   def sum=1+1;
                   echo "${sum}";
-                  throw;
+                  xxx;
                }
