@@ -8,17 +8,17 @@ phases:
       - test3
 
 stages:
-  - name: test1
-    steps:
+  - test1: 
+    - steps:
       - echo "test"
       - sh "ls -la"
       - sh "env"
-  - name: test2
-    steps:
+  - test2: 
+    - steps:
       - dir("."){sh "ls -la"}
       - script { echo "test" }
-  - name: test3
-    steps:
+  - test3: 
+    - steps:
       - ezLog.info "info"
       - script { 
                   def sum=1+1;
