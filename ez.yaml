@@ -9,7 +9,6 @@ stages:
       - dir("."){sh "ls -la"}
       - script { echo "test" }
       - ezLog.info "info"
-      - throw error
       - script { 
                   def sum=1+1;
                   echo "${sum}";
