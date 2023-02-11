@@ -1,3 +1,13 @@
+phases:
+  - name: phase1
+    stages:
+      - test1
+  - name: phase2
+    stages:
+      - test2
+      - test3
+
+
 stages:
   - name: test1
     steps:
@@ -8,6 +18,8 @@ stages:
     steps:
       - dir("."){sh "ls -la"}
       - script { echo "test" }
+  - name: test3
+    steps:
       - ezLog.info "info"
       - script { 
                   def sum=1+1;
