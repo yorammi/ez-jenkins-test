@@ -4,7 +4,7 @@ phases:
       - test1
   - name: phase2
     stages:
-      - test2
+      - "{test2}"
       - test3
 
 stages:
@@ -13,7 +13,7 @@ stages:
       - echo "test"
       - sh "ls -la"
       - sh "env"
-  - name: test2
+  - name: "{test2}"
     steps:
       - dir("."){sh "ls -la"}
       - script { echo "test" }
