@@ -1,23 +1,23 @@
 phases:
-  - name: phase1
+  - name: build
+    stages:
+      - build
+  - name: tests
     stages:
       - test1
-  - name: phase2
-    stages:
-      - "{test2}"
-      - test3
+      - test2
 
 stages:
-  - name: test1
+  - name: build
     steps:
       - echo "test"
       - sh "ls -la"
       - sh "env"
-  - name: "{test2}"
+  - name: test1
     steps:
       - dir("."){sh "ls -la"}
       - script { echo "test" }
-  - name: test3
+  - name: test2
     steps:
       - ezLog.info "info"
       - script { 
