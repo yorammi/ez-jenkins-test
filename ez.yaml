@@ -1,3 +1,5 @@
+environment:
+  val1: test
 phases:
   - name: build
     stages:
@@ -11,6 +13,7 @@ stages:
   - name: build
     steps:
       - echo "test"
+      - echo val1
       - sh "ls -la"
       - sh "env"
   - name: test1
@@ -21,6 +24,7 @@ stages:
     steps:
       - ezLog.info "info"
       - script { 
+                  echo "${val1}";
                   def sum=1+1;
                   echo "${sum}";
                }
