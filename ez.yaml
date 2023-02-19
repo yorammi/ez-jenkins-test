@@ -26,7 +26,7 @@ stages:
     steps:
       - ezLog.info "info"
       - script { 
-                  echo "${BRANCH_NAME}";
+                  echo "${BRANCH_IS_PRIMARY}";
                   def sum=1+1;
                   echo "${sum}";
                }
