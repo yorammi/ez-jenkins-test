@@ -17,6 +17,8 @@ stages:
       - sh "ls -la"
       - sh "env"
   - name: test1
+    condition: 
+      branch: mandatory
     steps:
       - dir("."){sh "ls -la"}
       - script { echo "test" }
@@ -24,7 +26,7 @@ stages:
     steps:
       - ezLog.info "info"
       - script { 
-                  echo "${val1}";
+                  echo "${BRANCH_NAME}";
                   def sum=1+1;
                   echo "${sum}";
                }
