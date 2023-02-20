@@ -10,7 +10,7 @@ configuration:
       mainBranchesToList:
         - yorammi@yorammi.com
     slack:
-      channel: jenkins-notifications
+      # channel: "#jenkins-notifications"
 environment:
   val1: test
 phases:
