@@ -24,7 +24,7 @@ stages:
       - script { echo "test" }
   - name: test2
     steps:
-      - ezLog.info "info"
+      - ezLog.info "test info"
       - script { 
                   def sum=1+1;
                   echo "${sum}";
