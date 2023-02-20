@@ -1,3 +1,16 @@
+configuration:
+  notifications:
+    emailNotifications: true
+    slackNotifications: true
+    successNotificationsOnMainBranchs: true
+    mainBranches:
+      - master
+      - test1
+    email:
+      mainBranchesToList:
+        - yorammi@yorammi.com
+    slack:
+      channel: jenkins-notifications
 environment:
   val1: test
 phases:
