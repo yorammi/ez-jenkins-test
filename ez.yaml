@@ -21,7 +21,7 @@ stages:
       branch: mandatory
     steps:
       - dir("."){sh "ls -la"}
-      - script { ezNotifications.sendEmailNotification(to:"yorammi@yorammi.com") }
+      - script { ezNotifications.sendEmailNotification(to:"yorammi@yorammi.com",message:"test message") }
   - name: test2
     steps:
       - ezLog.info "test info"
