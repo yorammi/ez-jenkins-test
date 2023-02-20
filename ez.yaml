@@ -12,7 +12,6 @@ phases:
 stages:
   - name: build
     steps:
-      - xxx
       - echo "test info"
       - echo val1
       - sh "ls -la"
