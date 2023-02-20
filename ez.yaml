@@ -12,7 +12,7 @@ phases:
 stages:
   - name: build
     steps:
-      - echo "test"
+      - echo "test info"
       - echo val1
       - sh "ls -la"
       - sh "env"
