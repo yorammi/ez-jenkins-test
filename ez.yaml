@@ -21,7 +21,7 @@ stages:
       branch: mandatory
     steps:
       - dir("."){sh "ls -la"}
-      - script { echo "test" }
+      - script { echo "test info" }
   - name: test2
     steps:
       - ezLog.info "test info"
