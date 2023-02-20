@@ -21,8 +21,8 @@ stages:
       branch: mandatory
     steps:
       - dir("."){sh "ls -la"}
-      - script { ezNotifications.sendSlackNotification(message:"test message",notifyOnSuccess:true) }
-      - script { ezNotifications.sendEmailNotification(to:"yorammi@yorammi.com",message:"test message",notifyOnSuccess:true) }
+      - script { ezNotifications.sendSlackNotification(message:"test message") }
+      - script { ezNotifications.sendEmailNotification(to:"yorammi@yorammi.com",message:"test message") }
   - name: test2
     steps:
       - ezLog.info "test info"
