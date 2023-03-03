@@ -11,7 +11,7 @@ configuration:
         - yorammi@yorammi.com
     slack:
 #       channel: "#jenkins-notifications"
-      channel: "#general"
+      channel: "general"
 environment:
   val1: test
 phases:
