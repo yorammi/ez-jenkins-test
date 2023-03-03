@@ -37,7 +37,7 @@ stages:
   - name: test2
     steps:
       - ezLog.info "test info"
-      - xxx
+#       - xxx
       - script { 
                   def sum=1+1;
                   echo "${sum}";
