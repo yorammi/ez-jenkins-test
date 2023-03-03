@@ -6,7 +6,7 @@ configuration:
     successNotificationsOnMainBranches: true
     mainBranches:
       - master
-      - test1
+      # - test1
     email:
       mainBranchesToList:
         - yorammi@yorammi.com
