@@ -1,6 +1,6 @@
 configuration:
   notifications:
-#     emailNotifications: true
+    emailNotifications: true
     slackNotifications: true
     successNotificationsOnMainBranches: true
     mainBranches:
