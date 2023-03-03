@@ -1,6 +1,6 @@
 configuration:
   notifications:
-    disablePoweredByMessage: true
+    # disablePoweredByMessage: true
     emailNotifications: true
     slackNotifications: true
     successNotificationsOnMainBranches: true
