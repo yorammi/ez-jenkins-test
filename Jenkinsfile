@@ -1,3 +1,3 @@
-@Library('ez') _
+@Library('ez-jenkins') _
 
 ezPipeline()
