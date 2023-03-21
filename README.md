@@ -1,1 +1,1 @@
-# ez-test
+# ez-jenkins-test
